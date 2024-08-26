@@ -20,7 +20,7 @@ const Todos = () => {
             <button onClick={submit}>Submit</button>
             <br />
             {todos.map((todo: any) => {
-                return <p>{todo.text}</p>
+                return <p key={todo.text}>{todo.text}</p>
             })}
         </div>
     )
